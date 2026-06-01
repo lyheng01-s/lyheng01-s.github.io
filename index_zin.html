@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sieng Lyheng Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">SL</a>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ===== Hero ===== -->
+  <header class="hero" id="home">
+    <h1>Sieng Lyheng</h1>
+    <p>Applied Math & Statistics | Data Science Student</p>
+
+    <div class="hero-socials">
+      <a href="https://github.com/lyheng01-s" target="_blank" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+        </svg>
+      </a>
+
+      <a href="https://www.linkedin.com/in/sieng-lyheng" target="_blank" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1s2.5 1.12 2.5 2.5ZM.5 8h4V24h-4V8Zm7 0h3.83v2.18h.06C11.92 8.98 13.67 8 15.84 8 20.33 8 21 10.95 21 14.78V24h-4v-8.07c0-1.92-.03-4.39-2.67-4.39-2.67 0-3.08 2.09-3.08 4.25V24h-4V8Z"/>
+        </svg>
+      </a>
+    </div>
+    <a href="assets/files/Sieng_Lyheng_CV.pdf" target="_blank" class="hero-cv-btn">
+      View My CV
+    </a>
+  </header>
+
+
+  <!-- ===== About ===== -->
+  <section id="about" class="section about-section">
+    <div class="section-heading">
+      <span class="section-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4.42 0-8 2.24-8 5v1h16v-1c0-2.76-3.58-5-8-5Z"/>
+        </svg>
+      </span>
+      <h2>About Me</h2>
+    </div>
+
+    <div class="section-line"></div>
+
+    <div class="about-card">
+      <div class="about-cover"></div>
+
+      <div class="about-profile-wrap">
+        <div class="about-profile-shape"></div>
+        <img src="assets/images/profile.jpg" alt="Sieng Lyheng" class="about-profile-img" />
+      </div>
+
+      <div class="about-intro">
+        <h3>Sieng Lyheng</h3>
+        <p>Applied Math & Statistics | Data Science Student</p>
+      </div>
+
+      <div class="about-content">
+        <p>
+          I am a 4th-year Data Science student at the Institute of Technology of Cambodia with a strong interest in Machine Learning, Artificial Intelligence, Data Analysis, and Dashboard Development.
+        </p>
+        <p>
+          I enjoy working with data to discover useful insights, build predictive models, and create dashboards that help people understand information clearly. I am currently looking for internship opportunities where I can apply my skills and gain real-world experience.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== Education ===== -->
+  <section id="education" class="section compact-section">
+    <div class="section-heading">
+      <span class="section-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm-6 9.23V16c0 1.66 2.69 3 6 3s6-1.34 6-3v-3.77l-6 3.27-6-3.27Z"/>
+        </svg>
+      </span>
+      <h2>Education</h2>
+    </div>
+
+    <div class="section-line"></div>
+
+    <div class="education-timeline">
+      <div class="education-item">
+        <div class="education-dot"></div>
+        <div class="education-card">
+          <div class="education-top">
+            <h3>Institute of Technology of Cambodia</h3>
+            <span>2022 – Present</span>
+          </div>
+          <h4>Applied Mathematics & Statistics (Data Science)</h4>
+          <p>
+            Currently pursuing my degree with a focus on Data Science, including machine learning,
+            data analysis, artificial intelligence, and dashboard development.
+          </p>
+        </div>
+      </div>
+
+      <div class="education-item">
+        <div class="education-dot"></div>
+        <div class="education-card">
+          <div class="education-top">
+            <h3>Kampot Krong Cambodia-Japan Friendship High School</h3>
+            <span>2017 – 2022</span>
+          </div>
+          <h4>High School Education</h4>
+          <p>
+            Completed general high school education and built the academic foundation that led to
+            my current studies in Data Science.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- ===== Experience ===== -->
+<section id="experience" class="section compact-section">
+  <div class="section-heading">
+    <span class="section-icon">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M9 4V2h6v2h4a2 2 0 0 1 2 2v3H3V6a2 2 0 0 1 2-2h4Zm6 0H9v2h6V4Zm6 7v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-9h7v2h4v-2h7Z"/>
+      </svg>
+    </span>
+    <h2>Experience</h2>
+  </div>
+
+  <div class="section-line"></div>
+
+  <div class="experience-card">
+    <div class="experience-top">
+      <div>
+        <h3>Data Visualization for Library Resources and Attendance using Python</h3>
+        <h4>ITC Library · Informal Internship</h4>
+      </div>
+      <span>Aug 2024 – Sep 2024</span>
+    </div>
+
+    <ul class="experience-points">
+      <li>Used Python and Jupyter Notebook to explore and visualize book borrowing and room booking data from multiple departments.</li>
+      <li>Presented key findings and usage insights to the Head of Library to support planning and decision-making.</li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- ===== Projects ===== -->
+<section id="projects" class="section compact-section">
+  <div class="section-heading">
+    <span class="section-icon">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M9 3h6v2h4a2 2 0 0 1 2 2v4H3V7a2 2 0 0 1 2-2h4V3Zm6 2V5H9v2h6ZM3 13h8v8H5a2 2 0 0 1-2-2v-6Zm10 0h8v6a2 2 0 0 1-2 2h-6v-8Zm-2 0v8h2v-8h-2Z"/>
+      </svg>
+    </span>
+    <h2>Projects</h2>
+  </div>
+
+  <div class="section-line"></div>
+
+  <div class="project-group">
+    <h3 class="project-group-title">AI / Deep Learning</h3>
+    <div class="projects-grid">
+
+    <article class="project-card">
+      <img src="assets/images/Sao_Somlen_Game.png" alt="Sao Somleng Game" class="project-image" />
+      <div class="project-content">
+        <div class="project-header">
+          <div>
+            <h3>Sao Somleng Game</h3>
+            <p class="project-subtitle">Audio Classification / Educational Game</p>
+          </div>
+          <a href="https://github.com/lyheng01-s/Sao-Somleng-Game.git" target="_blank" class="project-link" aria-label="Sao Somleng Game GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+            </svg>
+          </a>
+        </div>
+        <p class="project-summary">Sao Somleng Game is a voice-controlled Khmer learning game that uses fine-tuned Wav2Vec2 audio classification to recognize children’s pronunciation of Khmer characters and unlock the next level through interactive gameplay.</p>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Audio Classification</span>
+          <span>Fine-Tuning</span>
+          <span>Transformers</span>
+          <span>Wav2Vec2</span>
+          <span>Education Game</span>
+        </div>
+      </div>
+    </article>
+
+      <article class="project-card">
+        <img src="assets/images/automatic-license-plate-recognition-cambodia.png" alt="Automatic License Plate Recognition in Cambodia" class="project-image" />
+        <div class="project-content">
+          <div class="project-header">
+            <div>
+              <h3>Automatic License Plate Recognition in Cambodia (ALPRC)</h3>
+              <p class="project-subtitle">Computer Vision</p>
+            </div>
+            <a href="https://github.com/lyheng01-s/automatic-license-plate-recognition-cambodia" target="_blank" class="project-link" aria-label="ALPRC GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+              </svg>
+            </a>
+          </div>
+          <p class="project-summary">Real-time system that detects and recognizes Cambodian license plates using YOLOv8 and OCR for traffic monitoring and surveillance.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>YOLOv8</span>
+            <span>OCR</span>
+            <span>PaddleOCR</span>
+            <span>EasyOCR</span>
+            <span>Streamlit</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="assets/images/hiv-molecules-inhibitors-classification.png" alt="HIV Molecules Inhibitors Classification" class="project-image" />
+        <div class="project-content">
+          <div class="project-header">
+            <div>
+              <h3>HIV Molecules Inhibitors Classification</h3>
+              <p class="project-subtitle">Graph Deep Learning</p>
+            </div>
+            <a href="https://github.com/lyheng01-s/hiv-molecules-inhibitors-classification" target="_blank" class="project-link" aria-label="HIV project GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+              </svg>
+            </a>
+          </div>
+          <p class="project-summary">Graph-based model that classifies molecular compounds by potential HIV inhibitory activity to support early-stage drug discovery.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>GNN</span>
+            <span>GTN</span>
+            <span>PyTorch Geometric</span>
+            <span>RDKit</span>
+            <span>MoleculeNet</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="assets/images/alphabet-recognition.png" alt="Alphabet Recognition" class="project-image" />
+        <div class="project-content">
+          <div class="project-header">
+            <div>
+              <h3>Alphabet Recognition</h3>
+              <p class="project-subtitle">Deep Learning</p>
+            </div>
+            <a href="https://github.com/lyheng01-s/alphabet-recognition" target="_blank" class="project-link" aria-label="Alphabet Recognition GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+              </svg>
+            </a>
+          </div>
+          <p class="project-summary">CNN-based model for recognizing handwritten English alphabets across different writing styles for educational use.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>CNN</span>
+            <span>TensorFlow</span>
+            <span>Keras</span>
+            <span>NumPy</span>
+            <span>Matplotlib</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="project-group">
+    <h3 class="project-group-title">Machine Learning / Data Analysis</h3>
+    <div class="projects-grid">
+      <article class="project-card">
+        <img src="assets/images/hacker-news-post-success-prediction.png" alt="Hacker News Post Success Prediction" class="project-image" />
+        <div class="project-content">
+          <div class="project-header">
+            <div>
+              <h3>Hacker News Post Success Prediction</h3>
+              <p class="project-subtitle">Data Analysis</p>
+            </div>
+            <a href="https://github.com/lyheng01-s/hacker-news-post-success-prediction" target="_blank" class="project-link" aria-label="Hacker News project GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+              </svg>
+            </a>
+          </div>
+          <p class="project-summary">Web scraping and machine learning project that predicts which Hacker News posts are likely to gain more comments or upvotes.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Web Scraping</span>
+            <span>Logistic Regression</span>
+            <span>Random Forest</span>
+            <span>Pandas</span>
+            <span>BeautifulSoup</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="assets/images/car-price-prediction.png" alt="Car Price Prediction" class="project-image" />
+        <div class="project-content">
+          <div class="project-header">
+            <div>
+              <h3>Car Price Prediction</h3>
+              <p class="project-subtitle">Machine Learning</p>
+            </div>
+            <a href="https://github.com/lyheng01-s/car-price-prediction" target="_blank" class="project-link" aria-label="Car Price Prediction GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+              </svg>
+            </a>
+          </div>
+          <p class="project-summary">Predicts Ford used car prices from vehicle features using multiple linear regression and a simple user-friendly web tool.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Scikit-learn</span>
+            <span>Linear Regression</span>
+            <span>Pandas</span>
+            <span>Joblib</span>
+            <span>Streamlit</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="project-group">
+    <h3 class="project-group-title">Web System</h3>
+    <div class="projects-grid projects-grid-single">
+      <article class="project-card">
+        <img src="assets/images/library-management-system.png" alt="Library Management System" class="project-image" />
+        <div class="project-content">
+          <div class="project-header">
+            <div>
+              <h3>Library Management System</h3>
+              <p class="project-subtitle">Web App</p>
+            </div>
+            <a href="https://github.com/lyheng01-s/library-management-system" target="_blank" class="project-link" aria-label="Library Management System GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+              </svg>
+            </a>
+          </div>
+          <p class="project-summary">Web-based system that digitizes book management, borrowing, returns, fines, and reporting for more efficient library operations.</p>
+          <div class="project-tags">
+            <span>Django</span>
+            <span>Python</span>
+            <span>MySQL</span>
+            <span>HTML</span>
+            <span>JavaScript</span>
+            <span>Web App</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ===== Certificates ===== -->
+<section id="certificates" class="section compact-section">
+  <div class="section-heading">
+    <span class="section-icon">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 2a7 7 0 1 1 0 14 7 7 0 0 1 0-14Zm-2 14h4l3 6-5-2-5 2 3-6Z"/>
+      </svg>
+    </span>
+    <h2>Certificates</h2>
+  </div>
+
+  <div class="section-line"></div>
+
+  <div class="certificate-group">
+    <h3 class="certificate-group-title">Course Certificates</h3>
+    <div class="certificates-grid">
+      <article class="certificate-card">
+        <button class="certificate-preview-btn" type="button" onclick="window.open('assets/images/Cert_Getting Started with Neural Networks.png', '_blank')">
+          <img src="assets/images/Cert_Getting Started with Neural Networks.png" alt="Getting Started with Neural Networks certificate" class="certificate-image" />
+        </button>
+        <div class="certificate-content">
+          <div class="certificate-header">
+            <div>
+              <h3>Getting Started with Neural Networks</h3>
+              <p class="certificate-type">Online Course</p>
+            </div>
+            <a href="https://courses.analyticsvidhya.com/certificates/4lt3ec302q" target="_blank" class="certificate-link" aria-label="View certificate website">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H7v10h10v-4h2v6H5V5Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="certificate-card">
+        <button class="certificate-preview-btn" type="button" onclick="window.open('assets/images/Cert_Introduction to Data Visualization.png', '_blank')">
+          <img src="assets/images/Cert_Introduction to Data Visualization.png" alt="Introduction to Data Visualization certificate" class="certificate-image" />
+        </button>
+        <div class="certificate-content">
+          <div class="certificate-header">
+            <div>
+              <h3>Introduction to Data Visualization</h3>
+              <p class="certificate-type">Online Course</p>
+            </div>
+            <a href="https://simpli-web.app.link/e/NonqzO4Fb3b" target="_blank" class="certificate-link" aria-label="View certificate website">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H7v10h10v-4h2v6H5V5Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="certificate-card">
+        <button class="certificate-preview-btn" type="button" onclick="window.open('assets/images/Cert_OOPs in Java.png', '_blank')">
+          <img src="assets/images/Cert_OOPs in Java.png" alt="OOPs in Java certificate" class="certificate-image" />
+        </button>
+        <div class="certificate-content">
+          <div class="certificate-header">
+            <div>
+              <h3>OOPs in Java</h3>
+              <p class="certificate-type">Online Course</p>
+            </div>
+            <a href="https://simpli-web.app.link/e/XrfcljbY62b" target="_blank" class="certificate-link" aria-label="View certificate website">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H7v10h10v-4h2v6H5V5Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="certificate-card">
+        <button class="certificate-preview-btn" type="button" onclick="window.open('assets/images/SQL for Data Science.png', '_blank')">
+          <img src="assets/images/SQL for Data Science.png" alt="SQL for Data Science certificate" class="certificate-image" />
+        </button>
+        <div class="certificate-content">
+          <div class="certificate-header">
+            <div>
+              <h3>SQL for Data Science</h3>
+              <p class="certificate-type">Online Course</p>
+            </div>
+            <a href="https://simpli-web.app.link/e/JzilsBTFb3b" target="_blank" class="certificate-link" aria-label="View certificate website">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H7v10h10v-4h2v6H5V5Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+
+    <div class="certificate-group">
+      <h3 class="certificate-group-title">Academic / School Recognition</h3>
+      <div class="certificates-grid certificates-grid-academic">
+        <article class="certificate-card">
+          <button class="certificate-preview-btn" type="button" onclick="window.open('assets/images/Cert_ScientificDay.jpg', '_blank')">
+            <img src="assets/images/Cert_ScientificDay.jpg" alt="Scientific Day volunteer appreciation certificate" class="certificate-image" />
+          </button>
+          <div class="certificate-content">
+            <div class="certificate-header">
+              <div>
+                <h3>Scientific Day Volunteer Appreciation</h3>
+                <p class="certificate-type">Academic Recognition</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="certificate-card">
+          <button class="certificate-preview-btn" type="button" onclick="window.open('assets/images/Cert_Ms.png', '_blank')">
+            <img src="assets/images/Cert_Ms.png" alt="MS Word Excel PowerPoint certificate" class="certificate-image" />
+          </button>
+          <div class="certificate-content">
+            <div class="certificate-header">
+              <div>
+                <h3>MS Word, MS Excel, MS PowerPoint</h3>
+                <p class="certificate-type">Course Certificate</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section compact-section">
+  <div class="section-heading">
+    <span class="section-icon">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="m14 3 1.8 3.65L20 8l-3 2.93.71 4.07L14 13.1 10.29 15l.71-4.07L8 8l4.2-1.35L14 3ZM5 13l1.2 2.43L9 16.3l-2 1.95.47 2.75L5 19.7 2.53 21l.47-2.75L1 16.3l2.8-.87L5 13Z"/>
+      </svg>
+    </span>
+    <h2>Skills</h2>
+  </div>
+
+  <div class="section-line"></div>
+
+  <div class="skills-grid">
+    <article class="skill-card">
+      <h3>Programming Languages</h3>
+      <div class="skill-tags">
+        <span>Python</span>
+        <span>R</span>
+        <span>SQL</span>
+        <span>Java</span>
+        <span>C</span>
+        <span>C++</span>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <h3>Data Science / ML</h3>
+      <div class="skill-tags">
+        <span>Pandas</span>
+        <span>Scikit-learn</span>
+        <span>TensorFlow</span>
+        <span>Keras</span>
+        <span>PySpark</span>
+        <span>Machine Learning</span>
+        <span>Deep Learning</span>
+        <span>Data Analysis</span>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <h3>Visualization</h3>
+      <div class="skill-tags">
+        <span>Power BI</span>
+        <span>Excel</span>
+        <span>Matplotlib</span>
+        <span>Jupyter Notebook</span>
+        <span>Data Visualization</span>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <h3>Databases</h3>
+      <div class="skill-tags">
+        <span>MySQL</span>
+        <span>PostgreSQL</span>
+        <span>MongoDB</span>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <h3>Web / Scraping</h3>
+      <div class="skill-tags">
+        <span>Web Scraping</span>
+        <span>BeautifulSoup</span>
+        <span>Requests</span>
+        <span>Django</span>
+        <span>Flask</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <h3>Tools</h3>
+      <div class="skill-tags">
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>VS Code</span>
+        <span>MySQL Workbench</span>
+        <span>Code::Blocks</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section compact-section contact-section">
+  <div class="section-heading">
+    <span class="section-icon">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.01L12 13l8-5.99V7H4Zm16 10V9.24l-7.4 5.55a1 1 0 0 1-1.2 0L4 9.24V17h16Z"/>
+      </svg>
+    </span>
+    <h2>Contact</h2>
+  </div>
+
+  <div class="section-line"></div>
+
+  <div class="contact-layout">
+    <div class="contact-text-block">
+      <h3>Let’s Connect</h3>
+      <p>
+        Thank you for visiting my portfolio. I am always happy to connect, learn, and explore new opportunities in Data Science, AI, and Data Analysis.
+      </p>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-list">
+        <a href="mailto:sienglyheng1@gmail.com" class="contact-item">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.01L12 13l8-5.99V7H4Zm16 10V9.24l-7.4 5.55a1 1 0 0 1-1.2 0L4 9.24V17h16Z"/>
+            </svg>
+          </span>
+          <span>sienglyheng1@gmail.com</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/sieng-lyheng" target="_blank" class="contact-item">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1s2.5 1.12 2.5 2.5ZM.5 8h4V24h-4V8Zm7 0h3.83v2.18h.06C11.92 8.98 13.67 8 15.84 8 20.33 8 21 10.95 21 14.78V24h-4v-8.07c0-1.92-.03-4.39-2.67-4.39-2.67 0-3.08 2.09-3.08 4.25V24h-4V8Z"/>
+            </svg>
+          </span>
+          <span>linkedin.com/in/sieng-lyheng</span>
+        </a>
+
+        <a href="https://github.com/lyheng01-s" target="_blank" class="contact-item">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+            </svg>
+          </span>
+          <span>github.com/lyheng01-s</span>
+        </a>
+
+        <div class="contact-item">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/>
+            </svg>
+          </span>
+          <span>Phnom Penh, Cambodia</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== JavaScript ===== -->
+  <script src="js/main.js"></script>
+</body>
+</html>
