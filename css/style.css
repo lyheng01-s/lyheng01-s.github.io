@@ -672,6 +672,46 @@ body {
   border-radius: 999px;
   line-height: 1.2;
 }
+/* ===== Project Tabs ===== */
+.project-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 auto 26px;
+  max-width: 1200px;
+}
+
+.project-tab {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-tab:hover {
+  transform: translateY(-2px);
+  background: rgba(43, 164, 255, 0.10);
+  border-color: rgba(43, 164, 255, 0.28);
+}
+
+.project-tab.active {
+  background: rgba(43, 164, 255, 0.16);
+  border-color: rgba(43, 164, 255, 0.45);
+  box-shadow: 0 0 14px rgba(43, 164, 255, 0.16);
+}
+
+.project-panel {
+  display: none;
+}
+
+.project-panel.active {
+  display: block;
+}
 
 
 

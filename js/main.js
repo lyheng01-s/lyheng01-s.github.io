@@ -176,3 +176,23 @@ if (contactForm) {
     }
   });
 }
+
+/* ===== Project Tabs ===== */
+const projectTabs = document.querySelectorAll(".project-tab");
+const projectPanels = document.querySelectorAll(".project-panel");
+
+projectTabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = tab.getAttribute("data-project-tab");
+
+    projectTabs.forEach((item) => item.classList.remove("active"));
+    projectPanels.forEach((panel) => panel.classList.remove("active"));
+
+    tab.classList.add("active");
+
+    const targetPanel = document.getElementById(`project-panel-${target}`);
+    if (targetPanel) {
+      targetPanel.classList.add("active");
+    }
+  });
+});

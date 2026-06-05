@@ -173,6 +173,7 @@
 
 
   <!-- ===== Projects ===== -->
+<!-- ===== Projects ===== -->
 <section id="projects" class="section compact-section">
   <div class="section-heading">
     <span class="section-icon">
@@ -185,201 +186,226 @@
 
   <div class="section-line"></div>
 
-  <div class="project-group">
-    <h3 class="project-group-title">AI / Deep Learning</h3>
-    <div class="projects-grid">
+  <div class="project-tabs">
+    <button class="project-tab active" data-project-tab="ai">AI / Deep Learning</button>
+    <button class="project-tab" data-project-tab="ml">Machine Learning / Data Analysis</button>
+    <button class="project-tab" data-project-tab="de">Data Engineering</button>
+    <button class="project-tab" data-project-tab="web">Web System</button>
+  </div>
 
-    <article class="project-card">
-      <img src="assets/images/Sao_Somlen_Game.png" alt="Sao Somleng Game" class="project-image" />
-      <div class="project-content">
-        <div class="project-header">
-          <div>
-            <h3>Sao Somleng Game</h3>
-            <p class="project-subtitle">Audio Classification / Educational Game</p>
+  <!-- AI / Deep Learning -->
+  <div class="project-panel active" id="project-panel-ai">
+    <div class="project-group">
+      <h3 class="project-group-title">AI / Deep Learning</h3>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <img src="assets/images/Sao_Somlen_Game.png" alt="Sao Somleng Game" class="project-image" />
+          <div class="project-content">
+            <div class="project-header">
+              <div>
+                <h3>Sao Somleng Game</h3>
+                <p class="project-subtitle">Audio Classification / Educational Game</p>
+              </div>
+              <a href="https://github.com/lyheng01-s/Sao-Somleng-Game.git" target="_blank" class="project-link" aria-label="Sao Somleng Game GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+                </svg>
+              </a>
+            </div>
+            <p class="project-summary">Sao Somleng Game is a voice-controlled Khmer learning game that uses fine-tuned Wav2Vec2 audio classification to recognize children’s pronunciation of Khmer characters and unlock the next level through interactive gameplay.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Audio Classification</span>
+              <span>Fine-Tuning</span>
+              <span>Transformers</span>
+              <span>Wav2Vec2</span>
+              <span>Education Game</span>
+            </div>
           </div>
-          <a href="https://github.com/lyheng01-s/Sao-Somleng-Game.git" target="_blank" class="project-link" aria-label="Sao Somleng Game GitHub">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
-            </svg>
-          </a>
-        </div>
-        <p class="project-summary">Sao Somleng Game is a voice-controlled Khmer learning game that uses fine-tuned Wav2Vec2 audio classification to recognize children’s pronunciation of Khmer characters and unlock the next level through interactive gameplay.</p>
-        <div class="project-tags">
-          <span>Python</span>
-          <span>Audio Classification</span>
-          <span>Fine-Tuning</span>
-          <span>Transformers</span>
-          <span>Wav2Vec2</span>
-          <span>Education Game</span>
-        </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/images/automatic-license-plate-recognition-cambodia.png" alt="Automatic License Plate Recognition in Cambodia" class="project-image" />
+          <div class="project-content">
+            <div class="project-header">
+              <div>
+                <h3>Automatic License Plate Recognition in Cambodia (ALPRC)</h3>
+                <p class="project-subtitle">Computer Vision</p>
+              </div>
+              <a href="https://github.com/lyheng01-s/automatic-license-plate-recognition-cambodia" target="_blank" class="project-link" aria-label="ALPRC GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+                </svg>
+              </a>
+            </div>
+            <p class="project-summary">Real-time system that detects and recognizes Cambodian license plates using YOLOv8 and OCR for traffic monitoring and surveillance.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>YOLOv8</span>
+              <span>OCR</span>
+              <span>PaddleOCR</span>
+              <span>EasyOCR</span>
+              <span>Streamlit</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/images/hiv-molecules-inhibitors-classification.png" alt="HIV Molecules Inhibitors Classification" class="project-image" />
+          <div class="project-content">
+            <div class="project-header">
+              <div>
+                <h3>HIV Molecules Inhibitors Classification</h3>
+                <p class="project-subtitle">Graph Deep Learning</p>
+              </div>
+              <a href="https://github.com/lyheng01-s/hiv-molecules-inhibitors-classification" target="_blank" class="project-link" aria-label="HIV project GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+                </svg>
+              </a>
+            </div>
+            <p class="project-summary">Graph-based model that classifies molecular compounds by potential HIV inhibitory activity to support early-stage drug discovery.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>GNN</span>
+              <span>GTN</span>
+              <span>PyTorch Geometric</span>
+              <span>RDKit</span>
+              <span>MoleculeNet</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/images/alphabet-recognition.png" alt="Alphabet Recognition" class="project-image" />
+          <div class="project-content">
+            <div class="project-header">
+              <div>
+                <h3>Alphabet Recognition</h3>
+                <p class="project-subtitle">Deep Learning</p>
+              </div>
+              <a href="https://github.com/lyheng01-s/alphabet-recognition" target="_blank" class="project-link" aria-label="Alphabet Recognition GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+                </svg>
+              </a>
+            </div>
+            <p class="project-summary">CNN-based model for recognizing handwritten English alphabets across different writing styles for educational use.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>CNN</span>
+              <span>TensorFlow</span>
+              <span>Keras</span>
+              <span>NumPy</span>
+              <span>Matplotlib</span>
+            </div>
+          </div>
+        </article>
+
       </div>
-    </article>
-
-      <article class="project-card">
-        <img src="assets/images/automatic-license-plate-recognition-cambodia.png" alt="Automatic License Plate Recognition in Cambodia" class="project-image" />
-        <div class="project-content">
-          <div class="project-header">
-            <div>
-              <h3>Automatic License Plate Recognition in Cambodia (ALPRC)</h3>
-              <p class="project-subtitle">Computer Vision</p>
-            </div>
-            <a href="https://github.com/lyheng01-s/automatic-license-plate-recognition-cambodia" target="_blank" class="project-link" aria-label="ALPRC GitHub">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
-              </svg>
-            </a>
-          </div>
-          <p class="project-summary">Real-time system that detects and recognizes Cambodian license plates using YOLOv8 and OCR for traffic monitoring and surveillance.</p>
-          <div class="project-tags">
-            <span>Python</span>
-            <span>YOLOv8</span>
-            <span>OCR</span>
-            <span>PaddleOCR</span>
-            <span>EasyOCR</span>
-            <span>Streamlit</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <img src="assets/images/hiv-molecules-inhibitors-classification.png" alt="HIV Molecules Inhibitors Classification" class="project-image" />
-        <div class="project-content">
-          <div class="project-header">
-            <div>
-              <h3>HIV Molecules Inhibitors Classification</h3>
-              <p class="project-subtitle">Graph Deep Learning</p>
-            </div>
-            <a href="https://github.com/lyheng01-s/hiv-molecules-inhibitors-classification" target="_blank" class="project-link" aria-label="HIV project GitHub">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
-              </svg>
-            </a>
-          </div>
-          <p class="project-summary">Graph-based model that classifies molecular compounds by potential HIV inhibitory activity to support early-stage drug discovery.</p>
-          <div class="project-tags">
-            <span>Python</span>
-            <span>GNN</span>
-            <span>GTN</span>
-            <span>PyTorch Geometric</span>
-            <span>RDKit</span>
-            <span>MoleculeNet</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <img src="assets/images/alphabet-recognition.png" alt="Alphabet Recognition" class="project-image" />
-        <div class="project-content">
-          <div class="project-header">
-            <div>
-              <h3>Alphabet Recognition</h3>
-              <p class="project-subtitle">Deep Learning</p>
-            </div>
-            <a href="https://github.com/lyheng01-s/alphabet-recognition" target="_blank" class="project-link" aria-label="Alphabet Recognition GitHub">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
-              </svg>
-            </a>
-          </div>
-          <p class="project-summary">CNN-based model for recognizing handwritten English alphabets across different writing styles for educational use.</p>
-          <div class="project-tags">
-            <span>Python</span>
-            <span>CNN</span>
-            <span>TensorFlow</span>
-            <span>Keras</span>
-            <span>NumPy</span>
-            <span>Matplotlib</span>
-          </div>
-        </div>
-      </article>
     </div>
   </div>
 
-  <div class="project-group">
-    <h3 class="project-group-title">Machine Learning / Data Analysis</h3>
-    <div class="projects-grid">
-      <article class="project-card">
-        <img src="assets/images/hacker-news-post-success-prediction.png" alt="Hacker News Post Success Prediction" class="project-image" />
-        <div class="project-content">
-          <div class="project-header">
-            <div>
-              <h3>Hacker News Post Success Prediction</h3>
-              <p class="project-subtitle">Data Analysis</p>
+  <!-- Machine Learning / Data Analysis -->
+  <div class="project-panel" id="project-panel-ml">
+    <div class="project-group">
+      <h3 class="project-group-title">Machine Learning / Data Analysis</h3>
+      <div class="projects-grid projects-grid-single">
+        <article class="project-card">
+          <img src="assets/images/hacker-news-post-success-prediction.png" alt="Hacker News Post Success Prediction" class="project-image" />
+          <div class="project-content">
+            <div class="project-header">
+              <div>
+                <h3>Hacker News Post Success Prediction</h3>
+                <p class="project-subtitle">Data Analysis</p>
+              </div>
+              <a href="https://github.com/lyheng01-s/hacker-news-post-success-prediction" target="_blank" class="project-link" aria-label="Hacker News project GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+                </svg>
+              </a>
             </div>
-            <a href="https://github.com/lyheng01-s/hacker-news-post-success-prediction" target="_blank" class="project-link" aria-label="Hacker News project GitHub">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
-              </svg>
-            </a>
-          </div>
-          <p class="project-summary">Web scraping and machine learning project that predicts which Hacker News posts are likely to gain more comments or upvotes.</p>
-          <div class="project-tags">
-            <span>Python</span>
-            <span>Web Scraping</span>
-            <span>Logistic Regression</span>
-            <span>Random Forest</span>
-            <span>Pandas</span>
-            <span>BeautifulSoup</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <img src="assets/images/car-price-prediction.png" alt="Car Price Prediction" class="project-image" />
-        <div class="project-content">
-          <div class="project-header">
-            <div>
-              <h3>Car Price Prediction</h3>
-              <p class="project-subtitle">Machine Learning</p>
+            <p class="project-summary">Web scraping and machine learning project that predicts which Hacker News posts are likely to gain more comments or upvotes.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Web Scraping</span>
+              <span>Logistic Regression</span>
+              <span>Random Forest</span>
+              <span>Pandas</span>
+              <span>BeautifulSoup</span>
             </div>
-            <a href="https://github.com/lyheng01-s/car-price-prediction" target="_blank" class="project-link" aria-label="Car Price Prediction GitHub">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
-              </svg>
-            </a>
           </div>
-          <p class="project-summary">Predicts Ford used car prices from vehicle features using multiple linear regression and a simple user-friendly web tool.</p>
-          <div class="project-tags">
-            <span>Python</span>
-            <span>Scikit-learn</span>
-            <span>Linear Regression</span>
-            <span>Pandas</span>
-            <span>Joblib</span>
-            <span>Streamlit</span>
-          </div>
-        </div>
-      </article>
+        </article>
+      </div>
     </div>
   </div>
 
-  <div class="project-group">
-    <h3 class="project-group-title">Web System</h3>
-    <div class="projects-grid projects-grid-single">
-      <article class="project-card">
-        <img src="assets/images/library-management-system.png" alt="Library Management System" class="project-image" />
-        <div class="project-content">
-          <div class="project-header">
-            <div>
-              <h3>Library Management System</h3>
-              <p class="project-subtitle">Web App</p>
+  <!-- Data Engineering -->
+  <div class="project-panel" id="project-panel-de">
+    <div class="project-group">
+      <h3 class="project-group-title">Data Engineering</h3>
+      <div class="projects-grid projects-grid-single">
+        <article class="project-card">
+          <img src="assets/images/weather_preditction.jpg" alt="Real-Time Weather API & Analytics System" class="project-image" />
+          <div class="project-content">
+            <div class="project-header">
+              <div>
+                <h3>Real-Time Weather API & Analytics System</h3>
+                <p class="project-subtitle">Data Engineering</p>
+              </div>
+              <a href="https://github.com/lyheng01-s/real-time-weather-analytics" target="_blank" class="project-link" aria-label="Weather project GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+                </svg>
+              </a>
             </div>
-            <a href="https://github.com/lyheng01-s/library-management-system" target="_blank" class="project-link" aria-label="Library Management System GitHub">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
-              </svg>
-            </a>
+            <p class="project-summary">A real-time weather data engineering project that ingests WeatherAPI data with Kafka, processes it using PySpark, organizes data with Medallion Architecture, and supports analytics and machine learning workflows.</p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Kafka</span>
+              <span>PySpark</span>
+              <span>PostgreSQL</span>
+              <span>Medallion Architecture</span>
+              <span>Streamlit</span>
+            </div>
           </div>
-          <p class="project-summary">Web-based system that digitizes book management, borrowing, returns, fines, and reporting for more efficient library operations.</p>
-          <div class="project-tags">
-            <span>Django</span>
-            <span>Python</span>
-            <span>MySQL</span>
-            <span>HTML</span>
-            <span>JavaScript</span>
-            <span>Web App</span>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- Web System -->
+  <div class="project-panel" id="project-panel-web">
+    <div class="project-group">
+      <h3 class="project-group-title">Web System</h3>
+      <div class="projects-grid projects-grid-single">
+        <article class="project-card">
+          <img src="assets/images/library-management-system.png" alt="Library Management System" class="project-image" />
+          <div class="project-content">
+            <div class="project-header">
+              <div>
+                <h3>Library Management System</h3>
+                <p class="project-subtitle">Web App</p>
+              </div>
+              <a href="https://github.com/lyheng01-s/library-management-system" target="_blank" class="project-link" aria-label="Library Management System GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+                </svg>
+              </a>
+            </div>
+            <p class="project-summary">Web-based system that digitizes book management, borrowing, returns, fines, and reporting for more efficient library operations.</p>
+            <div class="project-tags">
+              <span>Django</span>
+              <span>Python</span>
+              <span>MySQL</span>
+              <span>HTML</span>
+              <span>JavaScript</span>
+              <span>Web App</span>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </div>
     </div>
   </div>
 </section>
