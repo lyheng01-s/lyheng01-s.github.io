@@ -713,6 +713,82 @@ body {
   display: block;
 }
 
+.project-slider {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  background: #07162f;
+}
+
+.project-slider-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.project-slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.project-slider .slide.active {
+  display: block;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(7, 22, 47, 0.72);
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.slider-btn.prev {
+  left: 8px;
+}
+
+.slider-btn.next {
+  right: 8px;
+}
+
+.slider-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 7px;
+  z-index: 3;
+}
+
+.slider-dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+}
+
+.slider-dots .dot.active {
+  background: #2ba4ff;
+}
+
 
 
 /* ===== Certificates ===== */
@@ -1509,6 +1585,7 @@ body {
     font-size: 12px;
     padding: 5px 8px;
   }
+
   /* ===== Certificates responsive mobile ===== */
   .certificates-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -189,6 +189,7 @@
   <div class="project-tabs">
     <button class="project-tab active" data-project-tab="ai">AI / Deep Learning</button>
     <button class="project-tab" data-project-tab="ml">Machine Learning / Data Analysis</button>
+    <button class="project-tab" data-project-tab="dashboard">Dashboard / Data Visualization</button>
     <button class="project-tab" data-project-tab="de">Data Engineering</button>
     <button class="project-tab" data-project-tab="web">Web System</button>
   </div>
@@ -311,7 +312,7 @@
   <div class="project-panel" id="project-panel-ml">
     <div class="project-group">
       <h3 class="project-group-title">Machine Learning / Data Analysis</h3>
-      <div class="projects-grid projects-grid-single">
+      <div class="projects-grid">
         <article class="project-card">
           <img src="assets/images/hacker-news-post-success-prediction.png" alt="Hacker News Post Success Prediction" class="project-image" />
           <div class="project-content">
@@ -337,6 +338,103 @@
             </div>
           </div>
         </article>
+
+        <article class="project-card">
+          <div class="project-slider" data-slider>
+            <div class="project-slider-track">
+              <img src="assets/images/loan_risk/overview.jpg" alt="Loan risk overview dashboard" class="slide active" />
+              <img src="assets/images/loan_risk/risk_factors.jpg" alt="Loan risk factors dashboard" class="slide" />
+              <img src="assets/images/loan_risk/streamlit_app_preview.png.jpg" alt="Loan risk Streamlit app preview" class="slide" />
+            </div>
+
+            <button class="slider-btn prev" type="button" aria-label="Previous image">&#10094;</button>
+            <button class="slider-btn next" type="button" aria-label="Next image">&#10095;</button>
+
+            <div class="slider-dots">
+              <button class="dot active" type="button" aria-label="Slide 1"></button>
+              <button class="dot" type="button" aria-label="Slide 2"></button>
+              <button class="dot" type="button" aria-label="Slide 3"></button>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <div class="project-header">
+              <div>
+                <h3>Loan Default Risk Analysis and Prediction</h3>
+                <p class="project-subtitle">Machine Learning / Data Analysis</p>
+              </div>
+              <a href="https://github.com/lyheng01-s/loan-default-risk-analysis" target="_blank" class="project-link" aria-label="Loan Default Risk Analysis GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.2.69-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.27 1.19-3.07-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.19 1.17a11.1 11.1 0 0 1 5.81 0c2.22-1.48 3.19-1.17 3.19-1.17.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.39-5.27 5.67.41.36.78 1.08.78 2.19 0 1.58-.01 2.85-.01 3.24 0 .31.2.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+                </svg>
+              </a>
+            </div>
+
+            <p class="project-summary">
+              End-to-end credit risk project that analyzes loan applicant data, identifies key risk factors, and predicts loan default using machine learning, dashboarding, and a Streamlit app.
+            </p>
+
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>Scikit-learn</span>
+              <span>Power BI</span>
+              <span>Streamlit</span>
+              <span>Random Forest</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dashboard / Data Visualization -->
+  <div class="project-panel" id="project-panel-dashboard">
+    <div class="project-group">
+      <h3 class="project-group-title">Dashboard / Data Visualization</h3>
+      <div class="projects-grid projects-grid-single">
+        <article class="project-card">
+          <div class="project-slider" data-slider>
+            <div class="project-slider-track">
+              <img src="assets/images/Cam_Budget/Cam_butget_overview.jpg" alt="Cambodia Budget Overview Dashboard" class="slide active" />
+              <img src="assets/images/Cam_Budget/Cam_Expenditure_Analysis.jpg" alt="Cambodia Expenditure Analysis Dashboard" class="slide" />
+              <img src="assets/images/Cam_Budget/Cam_Revenue_Analysis.jpg" alt="Cambodia Revenue Analysis Dashboard" class="slide" />
+              <img src="assets/images/Cam_Budget/Cambodia_Sector_Analysis.jpg" alt="Cambodia Sector Analysis Dashboard" class="slide" />
+            </div>
+
+            <button class="slider-btn prev" type="button" aria-label="Previous image">&#10094;</button>
+            <button class="slider-btn next" type="button" aria-label="Next image">&#10095;</button>
+
+            <div class="slider-dots">
+              <button class="dot active" type="button" aria-label="Slide 1"></button>
+              <button class="dot" type="button" aria-label="Slide 2"></button>
+              <button class="dot" type="button" aria-label="Slide 3"></button>
+              <button class="dot" type="button" aria-label="Slide 4"></button>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <div class="project-header">
+              <div>
+                <h3>Cambodia Budget Dashboard Analysis</h3>
+                <p class="project-subtitle">Power BI / Data Visualization</p>
+              </div>
+            </div>
+
+            <p class="project-summary">
+              An interactive Power BI dashboard project that analyzes Cambodia’s budget data through revenue, expenditure, sector analysis, and overall budget trends to support clearer financial insights and comparison across fiscal years.
+            </p>
+
+            <div class="project-tags">
+              <span>Power BI</span>
+              <span>Dashboard</span>
+              <span>Data Visualization</span>
+              <span>Budget Analysis</span>
+              <span>Revenue Analysis</span>
+              <span>Expenditure Analysis</span>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </div>
@@ -345,7 +443,7 @@
   <div class="project-panel" id="project-panel-de">
     <div class="project-group">
       <h3 class="project-group-title">Data Engineering</h3>
-      <div class="projects-grid projects-grid-single">
+      <div class="projects-grid">
         <article class="project-card">
           <img src="assets/images/weather_preditction.jpg" alt="Real-Time Weather API & Analytics System" class="project-image" />
           <div class="project-content">
@@ -379,7 +477,7 @@
   <div class="project-panel" id="project-panel-web">
     <div class="project-group">
       <h3 class="project-group-title">Web System</h3>
-      <div class="projects-grid projects-grid-single">
+      <div class="projects-grid">
         <article class="project-card">
           <img src="assets/images/library-management-system.png" alt="Library Management System" class="project-image" />
           <div class="project-content">
